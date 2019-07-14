@@ -21,9 +21,11 @@ cd desafio_eventos/backend
 yarn install
 
 Banco de Dados *instalar docker*
+
 docker run --name mongoditodesafio -p 27017:27017 -d -t mongo
 
 Executar servidor Node
+
 yarn dev
 
 
