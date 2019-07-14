@@ -9,6 +9,7 @@ const routes = new Router();
 
 routes.post('/event', EventController.store);
 routes.get('/list', EventController.index);
+routes.get('/autocomplet', EventController.list);
 
 routes.post('/event-buy', EventBuyController.store);
 

@@ -22,19 +22,20 @@ class EventController {
     const {
       busca
     } = req.query;
-
+    if (busca.length <= 1)
+      return res.send([]);
+    console.log(new RegExp(busca + '^', 'i'));
     const events = await Event.find({
-      "event": new RegExp(busca, 'i')
+      "event": new RegExp('^' + busca)
     }, [
       "event"
     ]).sort({
       createdAt: 'desc',
 
-    }).limit(3);
+    }).limit(5);
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
     return res.json(events);
-    // return res.send('teste,teste,tets');
   }
 
   async store(req, res) {
