@@ -24,7 +24,7 @@ class EventController {
     } = req.query;
     if (busca.length <= 1)
       return res.send([]);
-    console.log(new RegExp(busca + '^', 'i'));
+
     const events = await Event.find({
       "event": new RegExp('^' + busca)
     }, [
