@@ -14,7 +14,9 @@ Desafio aplicado para vaga de emprego. Realizado em NodeJs e banco de dados Mong
 ## Instalação
 
 git clone https://github.com/thiagovcomp/desafio_eventos.git
+
 cd backend
+
 yarn install
 
 Banco de Dados *instalar docker*
