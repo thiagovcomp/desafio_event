@@ -3,7 +3,8 @@
 Desafio aplicado para vaga de emprego. Realizado em NodeJs e banco de dados Mongo.
 
 1) Realizar uma api coletora recebendo os parâmetros abaixo e um autocomplete para consumir os dados inseridos
-  {
+  
+{
 "event": "buy",
 "timestamp": "2016-09-22T13:57:31.2311892-04:00"
 }
@@ -15,7 +16,7 @@ Desafio aplicado para vaga de emprego. Realizado em NodeJs e banco de dados Mong
 
 git clone https://github.com/thiagovcomp/desafio_eventos.git
 
-cd backend
+cd desafio_eventos/backend
 
 yarn install
 
