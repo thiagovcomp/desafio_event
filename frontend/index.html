@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>jQuery UI Autocomplete - Default functionality</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -36,54 +36,9 @@
         },
         minLength: 2,
         select: function (event, ui) {
-          alert('as');
-          $('#id_atleta').val(ui.item.id);
+          alert(ui.item.label);
         }
       });
-
-      // $('#campo-busca').autocomplete({
-      //   minLength: 1,
-      //   autoFocus: true,
-      //   //delay: 300,
-      //   // position: {
-      //   //   my: 'left top',
-      //   //   at: 'right top'
-      //   // },
-      //   // appendTo: '#form',
-      //   source: function (request, response) {
-      //     // source: function (request, response) {
-      //     $.getJSON("http://localhost:3333/autocomplet?term=" + request.term, function (data) {
-      //       console.log(data);
-      //       response($.map(data, function (value, key) {
-      //         alert(value);
-      //         return {
-      //           label: value,
-      //           value: key
-      //         };
-      //       }));
-      //     });
-      //   },
-      //   minLength: 2
-      //   // $.ajax({
-      //   //   url: 'http://localhost:3333/autocomplet',
-      //   //   type: 'get',
-      //   //   dataType: 'json',
-      //   //   data: {
-      //   //     'termo': request.term
-      //   //   }
-      //   // }).done(function (data) {
-      //   //   if (data.length > 0) {
-
-      //   //     data = data.split(',');
-      //   //     response($.each(data, function (key, item) {
-      //   //       return ({
-      //   //         label: item
-      //   //       });
-      //   //     }));
-      //   //   }
-      //   // });
-      //   // }
-      // });
 
     })
   </script>
@@ -95,8 +50,6 @@
     <input type="text" id="campo-busca" placeholder="Buscar" class="ui-autocomplete-input ui-autocomplete-loading"
       autocomplete="off">
   </div>
-
-
 </body>
 
 </html>
